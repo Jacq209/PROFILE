@@ -1,0 +1,186 @@
+body{
+    margin:0;
+    font-family:Calibri, sans-serif;
+    display:flex;
+    height:100vh;
+
+}
+
+
+.sidebar{
+    width:260px;
+    background:#f6f6f6;
+    padding:20px;
+    border-right:2px dashed black;
+    background-color: rgb(250, 234, 177);
+    height: auto;
+    min-height: 100%;
+    overflow-y: auto;
+    
+    
+
+
+}
+
+.sidebar .submenu label{
+    color: #000 !important;
+    
+}
+
+
+
+.sidebar h1{
+    font-size:26px;
+    font-weight:800;
+    margin-bottom:20px;
+    border: 3px black solid;
+    padding: 15px;
+    text-align: center;
+    background-color:rgb(101, 140, 88);
+    border-radius: 20px;
+}
+
+.sidebar h2{
+    font-size:22px;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(52, 101, 109);
+    border-radius: 15px;
+}
+
+.home{
+    font-size: 20px;
+    font-weight: 300px;
+    ;
+}
+
+.menu-label{
+    font-size:25px;
+    font-weight:600;
+    cursor:pointer;
+    user-select:none;
+}
+
+
+.submenu{
+    max-height:0;
+    overflow:hidden;
+    margin-left:20px;
+    transition:max-height 0.4s ease;
+}
+
+
+#profileToggle:checked ~ .submenu{
+    max-height:300px;
+}
+
+.submenu label{
+    display:block;
+    padding:5px 0;
+    color:#0033aa;
+    cursor:pointer;
+}
+
+.submenu label:hover{
+    text-decoration: underline;
+}
+
+
+.content{
+    flex:1;
+    padding: 40px;
+    display:flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    background-color: rgb(49, 105, 78);
+    margin: auto;
+}
+
+.default{
+    text-align: center;
+    padding: 50px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(49, 54, 71);
+    
+
+}
+
+.content-box{
+    width:90%;
+    min-height:fit-content;
+    height: auto;
+    border:3px solid black;
+    padding:30px;
+    text-align:center;
+    font-size:22px;
+    background-color: beige;
+    border-radius: 15px;
+    
+    
+}
+
+.member-info{
+    display:none;
+}
+
+
+input[type="radio"]:checked ~ .content .content-box .default{
+    display:none;
+}
+
+
+#jack:checked ~ .content .content-box #jack-info,
+#kat:checked ~ .content .content-box #kat-info,
+#clarence:checked ~ .content .content-box #clarence-info,
+#rechelle:checked ~ .content .content-box #rechelle-info,
+#asis:checked ~ .content .content-box #asis-info{
+    display:block;
+}
+
+
+.profile-img{
+    width:160px;
+    height:160px;
+    object-fit:cover;
+    border:2px solid #000;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+.name{
+    font-size:28px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+.name1{
+    padding: 10px;
+    border: 3px solid black;
+    background-color: rgb(101, 140, 88);;
+}
+
+.Personal-info{
+    text-align: left;
+    font-size: 20px;
+   
+}
+
+hr{
+    height: 2px;
+    background: #000;
+}
+
+.educ{
+     padding: 10px;
+    border: 3px solid black;
+    text-align: center;
+    background-color: rgb(187, 200, 99);
+}
+
+h2{
+     padding: 10px;
+    border: 3px solid black;
+    text-align: center;
+    background-color: rgb(52, 101, 109);
+}
