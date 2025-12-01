@@ -8,19 +8,38 @@ body{
 
 
 .sidebar{
-    width:260px;
+     width:260px;
     background:#f6f6f6;
     padding:20px;
     border-right:2px dashed black;
     background-color: rgb(250, 234, 177);
-    height: auto;
-    min-height: 100%;
-    overflow-y: auto;
-    
-    
-
+    height: 150vh;
 
 }
+
+.sidebar .menu-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.sidebar .menu-item:hover {
+    background: rgb(49, 105, 78);
+}
+
+.menu-icon{
+width: 25px;
+height: 25px;
+object-fit: contain;
+}
+
+
 
 .sidebar .submenu label{
     color: #000 !important;
@@ -62,6 +81,10 @@ body{
     user-select:none;
 }
 
+.sidebar .menu-label:hover{
+    background: rgb(49, 105, 78);
+}
+
 
 .submenu{
     max-height:0;
@@ -82,8 +105,8 @@ body{
     cursor:pointer;
 }
 
-.submenu label:hover{
-    text-decoration: underline;
+.sidebar .submenu label:hover{
+    background: #f6f6f6;
 }
 
 
@@ -94,7 +117,8 @@ body{
     justify-content:flex-start;
     align-items: flex-start;
     background-color: rgb(49, 105, 78);
-    margin: auto;
+    margin:auto;
+    height: 150vh;
 }
 
 .default{
@@ -117,6 +141,7 @@ body{
     font-size:22px;
     background-color: beige;
     border-radius: 15px;
+    
     
     
 }
@@ -183,5 +208,4 @@ h2{
     border: 3px solid black;
     text-align: center;
     background-color: rgb(52, 101, 109);
-
 }
